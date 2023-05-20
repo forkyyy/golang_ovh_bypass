@@ -14,8 +14,6 @@ snap install go --classic
 
 <h1>Setup:</h1>
 
-<h3>Update servers.json</h3><br>
-
 ```sh
 go build tcp.go
 go build udp.go
